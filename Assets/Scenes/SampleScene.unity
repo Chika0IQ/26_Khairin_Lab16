@@ -828,6 +828,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 6399823129881118160, guid: 65d066a112cfd6d4dac0f9c1f82b1631,
     type: 3}
   bulletSpawn: {fileID: 1652004433}
+  txtScore: {fileID: 1996108077}
+  score: 0
 --- !u!65 &2082870197
 BoxCollider:
   m_ObjectHideFlags: 0

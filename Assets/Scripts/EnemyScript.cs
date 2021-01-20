@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class EnemyScript : MonoBehaviour
 {
-    public CharacterMovement score;
+
 
 
     // Start is called before the first frame update
@@ -26,7 +27,9 @@ public class EnemyScript : MonoBehaviour
         {
             Destroy(gameObject);
             Destroy(collision.gameObject);
-            score.score += 1;
+
+            GameManager.instance.scoreCount++;
+            GameManager.instance.scoreTxt.GetComponent<Text>().text = "Score: " + GameManager.instance.scoreCount;
         }
     }
 }

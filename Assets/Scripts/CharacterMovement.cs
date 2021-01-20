@@ -12,8 +12,6 @@ public class CharacterMovement : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject bulletSpawn;
 
-    public GameObject txtScore;
-    public float score;
 
     // Start is called before the first frame update
     void Start()
@@ -26,8 +24,6 @@ public class CharacterMovement : MonoBehaviour
     {
         Movement();
         Shoot();
-
-        txtScore.GetComponent<Text>().text = "Score: " + score;
     }
 
     private void Movement()
